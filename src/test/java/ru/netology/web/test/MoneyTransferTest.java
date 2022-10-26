@@ -20,6 +20,7 @@ class MoneyTransferTest {
     void setUpAll() {
         open("http://localhost:9999/");
     }
+
     @Test
     void shouldLogin() {
         int amount = 5000;
