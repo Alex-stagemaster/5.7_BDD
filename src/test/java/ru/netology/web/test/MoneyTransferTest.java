@@ -9,7 +9,6 @@ import ru.netology.web.page.DashboardPage;
 import ru.netology.web.page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.open;
-import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.web.data.DataHelper.getFirstCardInfo;
 import static ru.netology.web.data.DataHelper.getSecondCardInfo;
@@ -23,7 +22,7 @@ class MoneyTransferTest {
 
     @Test
     void shouldLogin() {
-        int amount = 5000;
+        int amount = 2000;
         val loginPage = new LoginPage();
         val authInfo = DataHelper.getAuthInfo();
         val verificationPage = loginPage.validLogin(authInfo);
@@ -45,7 +44,7 @@ class MoneyTransferTest {
     }
     @Test
     void shouldLogin2() {
-        int amount = 10000;
+        int amount = 9000;
         val loginPage = new LoginPage();
         val authInfo = DataHelper.getAuthInfo();
         val verificationPage = loginPage.validLogin(authInfo);
